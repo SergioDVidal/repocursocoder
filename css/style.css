@@ -522,6 +522,9 @@ footer button .bx-chevrons-right {
     grid-template-rows: 1fr;
     grid-column-start: 2;
   }
+  .hero__contacto .header__text {
+    grid-template-rows: 1fr;
+}
   .menu {
     display: flex;
     justify-content: space-between;
