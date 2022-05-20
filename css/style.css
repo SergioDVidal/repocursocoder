@@ -114,7 +114,7 @@ main {
   position: absolute;
   right: 0;
   top: 0;
-  max-height: 16vh;
+  height: 16vh;
   margin-left: 1em;
 }
 .menu {
@@ -505,8 +505,21 @@ footer button .bx-chevrons-right {
 
 /********END MOBIL********/
 
+/*OVERWRITE BOOTS**/
+.sliderhr {
+  object-fit: cover;
+  max-height: 50vh;
+}
+.sliderdark {
+  color: #222;
+}
+
 /*******************************************DESK TOP***************************************************/
 @media screen and (min-width: 768px) {
+  h1,
+h2 {
+  margin: 40px 0 20px 0;
+}
   .header__content {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -515,10 +528,11 @@ footer button .bx-chevrons-right {
   .header__text {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    /* background-color: rgba(255, 255, 255, 0.8);
-    min-height: 150px;
-    padding: 20px; */
-    margin: 10% 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-height: 30vh;
+
+    /* margin: 10% 10%; */
   }
   .hero__estudio .header__text {
     grid-template-columns: 1fr 1fr;
