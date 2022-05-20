@@ -121,9 +121,12 @@ main {
   display: block;
   height: 16vh;
   background-color: rgba(95, 96, 82, 0.9);
-  position: relative;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   padding: 0;
+  z-index: 999;
 }
 .menu input:checked ~ nav,
 .menu label,
@@ -513,7 +516,19 @@ footer button .bx-chevrons-right {
 .sliderdark {
   color: #222;
 }
-
+.carousel-item .sliderindex {
+	height: 100vh;
+	min-height: 300px;
+}
+#carouselindex {
+  position: static;
+}
+#carouselindex img {
+  object-fit: cover;
+}
+#carouselindex .carousel-caption {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 /*******************************************DESK TOP***************************************************/
 @media screen and (min-width: 768px) {
   h1,
@@ -547,7 +562,7 @@ h2 {
     justify-content: space-between;
     background-color: rgba(95, 96, 82, 0.6);
     align-items: center;
-    position: sticky;
+    /* position: sticky; */
     padding-right: 50px;
     height: 100px;
   }
