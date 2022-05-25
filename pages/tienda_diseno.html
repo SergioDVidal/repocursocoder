@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tienda de diseño</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="../css/style.css" />
   <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,113 +69,221 @@
 
     <!-- SECCION PRODUCTOS-->
     <section class="section__productos">
-      <!-- producto-->
-      <div class="card__productos">
-        <div class="card_productos--fototitulo">
-          <img src="./../img/placeholder_1.1_9.jpg" alt="nombre del producto">
-          <div class="card__title--productos">
-            <p>Nombre del producto </p>
-            <p>$ 999 </p>
+      <div class="row g-5 my-20">
+        <!--producto 1-->
+        <div class="col-md-3 col-12">
+          <div class="bg-image">
+            <img src="./../img/placeholder_1.1_2.jpg" class="w-100" alt="nombre del proyecto" />
+            <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
+              <div class="d-flex">
+                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 1</p>
+                <p class="col-3 text-white mb-0 align-self-end">$ 999</p>
+                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
+                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- producto-->
-      <div class="card__productos">
-        <div class="card_productos--fototitulo">
-          <img src="./../img/placeholder_1.1_10.jpg" alt="nombre del producto">
-          <div class="card__title--productos">
-            <p>Nombre del producto </p>
-            <p>$ 999 </p>
+        <!--producto 2-->
+        <div class="col-md-3 col-12">
+          <div class="bg-image">
+            <img src="./../img/placeholder_1.1_5.jpg" class="w-100" alt="nombre del proyecto" />
+            <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
+              <div class="d-flex">
+                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 2</p>
+                <p class="col-3 text-white mb-0 align-self-end">$ 1,999</p>
+                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
+                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              </div>
+            </div>
           </div>
         </div>
-      </div> <!-- producto-->
-      <div class="card__productos">
-        <div class="card_productos--fototitulo">
-          <img src="./../img/placeholder_1.1_11.jpg" alt="nombre del producto">
-          <div class="card__title--productos">
-            <p>Nombre del producto </p>
-            <p>$ 999 </p>
+
+        <!--producto 3-->
+        <div class="col-md-3 col-12">
+          <div class="bg-image">
+            <img src="./../img/placeholder_1.1_13.jpg" class="w-100" alt="nombre del proyecto" />
+            <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
+              <div class="d-flex">
+                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 3</p>
+                <p class="col-3 text-white mb-0 align-self-end">$ 1,999</p>
+                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
+                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              </div>
+            </div>
           </div>
         </div>
-      </div> <!-- producto-->
-      <div class="card__productos">
-        <div class="card_productos--fototitulo">
-          <img src="./../img/placeholder_1.1_12.jpg" alt="nombre del producto">
-          <div class="card__title--productos">
-            <p>Nombre del producto </p>
-            <p>$ 999 </p>
+
+        <!--producto 4-->
+        <div class="col-md-3 col-12">
+          <div class="bg-image">
+            <img src="./../img/placeholder_1.1_6.jpg" class="w-100" alt="nombre del proyecto" />
+            <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
+              <div class="d-flex">
+                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 4</p>
+                <p class="col-3 text-white mb-0 align-self-end">$ 1,099</p>
+                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
+                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              </div>
+            </div>
           </div>
         </div>
-      </div> <!-- producto-->
-      <div class="card__productos">
-        <div class="card_productos--fototitulo">
-          <img src="./../img/placeholder_1.1_13.jpg" alt="nombre del producto">
-          <div class="card__title--productos">
-            <p>Nombre del producto </p>
-            <p>$ 999 </p>
+
+
+        <!--producto 5-->
+        <div class="col-md-3 col-12">
+          <div class="bg-image">
+            <img src="./../img/placeholder_1.1_3.jpg" class="w-100" alt="nombre del proyecto" />
+            <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
+              <div class="d-flex">
+                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 5</p>
+                <p class="col-3 text-white mb-0 align-self-end">$ 1,099</p>
+                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
+                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              </div>
+            </div>
           </div>
         </div>
-      </div> <!-- producto-->
-      <div class="card__productos">
-        <div class="card_productos--fototitulo">
-          <img src="./../img/placeholder_1.1_7.jpg" alt="nombre del producto">
-          <div class="card__title--productos">
-            <p>Nombre del producto </p>
-            <p>$ 999 </p>
+
+
+        <!--producto 6-->
+        <div class="col-md-3 col-12">
+          <div class="bg-image">
+            <img src="./../img/placeholder_1.1_8.jpg" class="w-100" alt="nombre del proyecto" />
+            <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
+              <div class="d-flex">
+                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 6</p>
+                <p class="col-3 text-white mb-0 align-self-end">$ 1,099</p>
+                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
+                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              </div>
+            </div>
           </div>
         </div>
-      </div> <!-- producto-->
-      <div class="card__productos">
-        <div class="card_productos--fototitulo">
-          <img src="./../img/placeholder_1.1_6.jpg" alt="nombre del producto">
-          <div class="card__title--productos">
-            <p>Nombre del producto </p>
-            <p>$ 999 </p>
+
+
+        <!--producto 7-->
+        <div class="col-md-3 col-12">
+          <div class="bg-image">
+            <img src="./../img/placeholder_1.1_10.jpg" class="w-100" alt="nombre del proyecto" />
+            <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
+              <div class="d-flex">
+                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 7</p>
+                <p class="col-3 text-white mb-0 align-self-end">$ 1,099</p>
+                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
+                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              </div>
+            </div>
           </div>
         </div>
-      </div> <!-- producto-->
-      <div class="card__productos">
-        <div class="card_productos--fototitulo">
-          <img src="./../img/placeholder_1.1_5.jpg" alt="nombre del producto">
-          <div class="card__title--productos">
-            <p>Nombre del producto </p>
-            <p>$ 999 </p>
+
+
+        <!--producto 8-->
+        <div class="col-md-3 col-12">
+          <div class="bg-image">
+            <img src="./../img/placeholder_1.1_9.jpg" class="w-100" alt="nombre del proyecto" />
+            <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
+              <div class="d-flex">
+                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 8</p>
+                <p class="col-3 text-white mb-0 align-self-end">$ 1,099</p>
+                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
+                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+        <!-- Modal producto template-->
+        <div class="modal fade" id="modalProducto" tabindex="-1" aria-labelledby="modalProducto" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalProyecto1">Producto template</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!--modal carousel producto template-->
+                <div class="">
+                  <h6>Autor: Jorge Perez</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sit tenetur explicabo nam fugit, cum
+                    aspernatur pariatur! Distinctio, nostrum veritatis.</p>
+                </div>
+                <div id="carouselProducto" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./../img/placeholder_1.1_10.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./../img/placeholder_1.1_2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./../img/placeholder_1.1_13.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </section>
   </main>
-  <footer>
-    <div class="footer__col1">
-      <img src="./../img/logo_100.jpg" alt="Logo estudio diseño" class="footer__logo" />
-      <div>
-        <p>Nombre de la calle #1234</p>
-        <p>Tel. 44 4444.4444</p>
+  <footer class:"container">
+    <div class="row">
+      <div class="col-md-4 col-12">
+        <div class="row justify-content-center justify-content-md-start">
+          <div class="col-auto">
+            <img src="./../img/logo_100.jpg" alt="Logo estudio diseño" class="footer__logo" />
+          </div>
+          <div class="col-auto text-center text-md-start">
+            <p>Nombre de la calle #1234</p>
+            <p>Tel. 44 4444.4444</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12">
+        <ul>
+          <li>
+            <a href="mailto:contacto@estudio.com.ar"><i class="bx bx-envelope bx-sm"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bx bxl-instagram bx-sm"></i></a>
+          </li>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=541144444444" target="_blank"><i
+                class="bx bxl-whatsapp bx-sm"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-12">
+        <form method="post" action="#" class="row justify-content-center justify-content-md- align-items-center">
+
+          <div class="col-auto"><input type="email" name="email" placeholder="tuemail@email.com"
+              class="footer_form--text form-control" /></div>
+          <div class="col-auto"> <input type="submit" value="Suscríbete" class="footer_form--button" />
+          </div>
+
+        </form>
       </div>
     </div>
-    <div class="footer__col2">
-      <ul>
-        <li>
-          <a href="mailto:contacto@estudio.com.ar"><i class='bx bx-envelope bx-sm'></i></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram bx-sm'></i></a>
-        </li>
-        <li>
-          <a href="https://api.whatsapp.com/send?phone=541144444444" target="_blank"><i
-              class='bx bxl-whatsapp bx-sm'></i></a>
-        </li>
-      </ul>
-    </div>
 
-    <div class="footer__col3">
-      <form method="post" action="#">
-        <label>Suscríbete</label><input type="email" name="email" placeholder="tuemail@email.com"
-          class="footer_form--text" />
-        <input type="submit" value=">>" class="footer_form--button">
-      </form>
-    </div>
   </footer>
+  <!-- Copyright -->
+  <div class="text-center p-3 copyright">
+    © 2020 Copyright - Sergio Vidal</div>
+  <!-- Copyright -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
