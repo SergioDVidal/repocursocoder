@@ -1,17 +1,17 @@
 //breakpoint
-$medias: (xs: 0, sm: 576px, md: 768px, lg: 992px);
+$medias: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl:1200px);
 
 @mixin medias ($size) {
   @if map-medias ($medias, $size) {
     @media (min-width: #{map-get($medias, $size)}) {
-            @content;
-        }
+      @content;
     }
+  }
 }
 
+//Extend gridcenter
 %gridcenter {
-    display: grid;
-      justify-content: center;
-      align-items: center;
-    }
-  
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}

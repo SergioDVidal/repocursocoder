@@ -8,16 +8,21 @@
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 300;
-  color: #222;
+  color: $color-text;
+  font-size: 1rem;
+
+  @include medias(lg) {
+    font-size: 1.1rem;
+  }
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Noto Serif", serif;
-  font-weight: 600;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
   color: $color-principal;
 }
 
@@ -31,8 +36,25 @@ h2 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
 }
+
+h4,
+h5,
+h6 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  color: $color-principal-dark;
+}
+
+h5 {
+  font-size: 1.15rem;
+
+  @include medias(lg) {
+    font-size: 1.25rem;
+  }
+}
+
 
 img {
   max-width: 100%;
@@ -60,7 +82,8 @@ body {
 .hero__proyecto,
 .hero__estudio,
 .hero__tienda,
-.hero__blog {
+.hero__blog,
+.hero__map {
   background-size: cover;
   min-height: 100vh;
   background-attachment: fixed;
@@ -71,15 +94,12 @@ body {
 
   @include medias (md) {
     align-items: center;
+    justify-content: space-around;
   }
 }
 
-.hero__contactoss {
-  background-size: cover;
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+.hero__map {
+  min-height: 200px;
   background-image: url(../img/placeholder_16.9_2.jpg);
 
 }
@@ -119,12 +139,6 @@ main {
   }
 }
 
-.hero__estudio .header__text {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-start: 2;
-}
-
 /********MOBIL BP <576px ********/
 
 .header__text {
@@ -132,7 +146,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.85);
   min-height: 150px;
   padding: 30px;
 
@@ -286,13 +300,14 @@ input#hambur {
         text-decoration: none;
         color: #fff;
         font-weight: 300;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
         justify-content: center;
         padding: 10px;
 
         @include medias(md) {
           display: flex;
+          font-size: 0.9rem;
           font-weight: 400;
           height: 70px;
           align-items: center;
@@ -300,25 +315,38 @@ input#hambur {
         }
 
         @include medias(lg) {
-          font-size: .9rem;
-          font-weight: 300;
+          font-size: 1rem;
+          font-weight: 400;
           height: 100px;
         }
 
         &:hover {
           color: #f4f3ee;
-          font-weight: 300;
+          font-weight: 400;
           height: auto;
           align-items: center;
 
           @include medias(md) {
             background: #f0f0f0;
             color: $color-principal;
-            height: 100px;
+            height: 70px;
             align-items: center;
             border-bottom: 5px solid $color-principal-dark;
-
           }
+
+          @include medias(lg) {
+            height: 100px;
+          }
+        }
+      }
+
+      .activem {
+        color: #f4f3ee;
+
+        @include medias(md) {
+          background: rgba(240, 240, 240, 0.75);
+          color: $color-principal;
+          border-bottom: 5px solid $color-principal-dark;
         }
       }
     }
@@ -327,7 +355,6 @@ input#hambur {
 
 /*hover items hamburguesa*/
 .menu .nav li:hover {
-  /* filter: brightness(150%); */
   background: linear-gradient(to left, $color-principal, #6f6e63, $color-principal);
 }
 
@@ -367,10 +394,10 @@ input#hambur {
     padding: 20px;
     justify-content: center;
   }
-}
 
-.columna2 h3 {
-  margin-bottom: 15px;
+  h3 {
+    margin-bottom: 15px;
+  }
 }
 
 /*seccion ancho completo*/
@@ -391,21 +418,22 @@ input#hambur {
 
 .section__contacto {
   @extend %gridcenter;
-  // display: grid;
-  // justify-content: center;
   grid-template-columns: 1fr;
 
   @include medias (md) {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
   }
 }
 
 .bx {
   color: #fff;
+  padding: 0 5px;
 }
 
+/*un guiño en Aqua para Flor*/
 .bx:hover {
-  color: rgba(121, 1, 85, 0.867);
+  color: aqua;
 }
 
 /*BOTONES*/
@@ -499,6 +527,10 @@ a.boton {
   width: 100%;
 }
 
+input::placeholder {
+  color: lighten($color-principal, 35%);
+}
+
 .columna2--form .inputradio {
   display: inline;
   width: auto;
@@ -514,18 +546,34 @@ label {
   border: none;
   color: #fff;
   text-transform: uppercase;
-  background-color: rgba(95, 96, 82, 0.6);
+  background-color: $color-principal;
 }
 
 /*FOOTER*/
 footer {
-  padding: 50px;
   background-color: #e8e8e8;
   justify-content: center;
   align-items: center;
 
   @include medias (md) {
     justify-content: space-between;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+
+    @include medias (md) {
+      font-size: 0.75rem;
+    }
+
+    @include medias (lg) {
+      font-size: 0.9rem;
+    }
+  }
+
+  .submit {
+    text-transform: none;
   }
 }
 
@@ -542,7 +590,7 @@ footer ul li {
 }
 
 .footer__logo {
-  width: 60px;
+  width: 70px;
   margin-bottom: 20px;
 
   @include medias (md) {
@@ -553,19 +601,6 @@ footer ul li {
   @include medias (lg) {
     margin-bottom: 0px;
     width: 80px;
-  }
-}
-
-footer p {
-  margin: 0;
-  font-size: 0.9rem;
-
-  @include medias (md) {
-    font-size: 0.75rem;
-  }
-
-  @include medias (lg) {
-    font-size: 0.9rem;
   }
 }
 
@@ -597,9 +632,35 @@ footer button .bx-chevrons-right {
 }
 
 .copyright {
-  background-color: rgb(123, 121, 108);
+  background-color: $color-principal;
+  padding: 20px 50px;
   color: #fff;
-  font-size: 0.75em;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-content: space-around;
+
+  @include medias(md) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .copy,
+  .mapa {
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
+  @include medias(md) {
+    .mapa {
+      text-align: left;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 /*CARDS*/
@@ -645,14 +706,14 @@ footer button .bx-chevrons-right {
       padding-bottom: 0.7rem;
       margin: 0;
       color: $color-principal;
-      font-family: "Noto Serif", serif;
+      font-family: 'Work Sans', sans-serif;
       font-weight: 400;
       text-align: center;
     }
   }
 
   .team__bio {
-    font-size: 0.8em;
+    font-size: 0.85em;
     line-height: 1.5;
     flex-grow: 1;
   }
@@ -694,20 +755,28 @@ footer button .bx-chevrons-right {
     right: 0;
     bottom: 0;
     left: 0;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
   }
 
   .mask:hover {
-    background-color: $color-principal;
+    background-color: rgba($color: $color-principal, $alpha: 0.7);
     opacity: 1;
     transition: all 0.5s ease-out;
   }
 }
 
 .mask div p {
-  background-color: rgba(123, 121, 108, 0.75);
   padding: 1rem;
   text-decoration: none;
   cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.proyecto.mask div p {
+  background-color: rgba($color: $color-principal, $alpha: 0.8);
 }
 
 .section__productos .bg-image .mask:hover {
@@ -716,18 +785,27 @@ footer button .bx-chevrons-right {
   transition: all 0.5s ease-out;
 }
 
-/********END MOBIL********
-  background-color: rgba(0, 0, 0, 0.6)
-  /
-  
-  /*OVERWRITE BOOTS**/
+.precios {
+  background-color: rgba($color: $color-principal, $alpha: 0.8);
+  display: flex;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-items: center;
+
+  .pesos {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}
+
+/*OVERWRITE BOOTS**/
 .sliderhr {
   object-fit: cover;
   max-height: 50vh;
 }
 
 .sliderdark {
-  color: #222;
+  color: $color-text;
 }
 
 .carousel-item .sliderindex {
@@ -737,14 +815,23 @@ footer button .bx-chevrons-right {
 
 #carouselindex {
   position: static;
-}
 
-#carouselindex img {
-  object-fit: cover;
+  img {
+    object-fit: cover;
+  }
 }
 
 #carouselindex .carousel-caption {
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+#carouselMitienda .carousel-caption {
+  background-color: rgba($color: $color-principal, $alpha: 0.7);
+
+  h5 {
+    color: #fff;
+    font-weight: 500;
+  }
 }
 
 .carousel-item {
@@ -763,5 +850,38 @@ footer button .bx-chevrons-right {
 }
 
 .caption--center .textdark {
-  color: #222;
+  color: $color-text;
+}
+
+.modal-content {
+
+  h5,
+  h6 {
+    font-weight: 500;
+  }
+
+  p {
+    color: $color-text;
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: normal;
+  }
+}
+
+#suscripcion.form-control.controlp {
+  border-radius: 0;
+
+  &::placeholder {
+    color: lighten($color-principal, 35%);
+  }
+}
+
+/*cambios after scroll*/
+.scrolling-active .menu {
+  background-color: $color-principal;
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+}
+
+.scrolling-active .nav a {
+  color: #fff;
 }

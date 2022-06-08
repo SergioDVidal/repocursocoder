@@ -5,15 +5,19 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tienda de diseño</title>
+  <meta name="keywords"
+    content="elementos de diseño, empapelados, lamparas, tapizados, cerámicos, personalizados, objetos decoración, decoración,interiores, paisajismo, macetas">
+  <meta name="description"
+    content="Tienda de objetos y elementos personalizados para decorar interiores y exteriores.Diseños únicos con materiales a medida.">
+  <title>Tienda de diseño | Estudio LR</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="../css/style.css" />
-  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Noto+Serif+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
     rel="stylesheet">
 </head>
 
@@ -21,14 +25,14 @@
   <header class="hero__tienda">
     <div class="menu">
       <a href="./../index.html" class="logoLink"><img src="./../img/logo_100.jpg" class="logoham"
-        alt="Logo estudio diseño" /></a><input type="checkbox" id="hambur"><label for="hambur"> ☰</label>
+          alt="Logo estudio diseño" /></a><input type="checkbox" id="hambur"><label for="hambur"> ☰</label>
       <nav class="nav">
         <a href="./../index.html"> <img src="./../img/logo_100.jpg" class="logo" alt="Logo estudio diseño" /></a>
         <ul>
           <li><a href="./../pages/servicios.html">Servicios</a></li>
           <li><a href="./../pages/proyectos.html">Proyectos</a></li>
           <li><a href="./../pages/nosotros.html">El estudio</a></li>
-          <li><a href="./../pages/tienda_diseno.html">Tienda de diseño</a></li>
+          <li><a href="./../pages/tienda_diseno.html" class="activem">Tienda de diseño</a></li>
           <li><a href="./../pages/contacto.html">Contactanos</a></li>
           <li><a href="./../pages/blog.html">Blog</a></li>
         </ul>
@@ -45,11 +49,10 @@
     <div class="header__content">
       <div class="header__text">
         <h1>Productos personalizados</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto qui
-          quae nemo delectus aliquid ratione neque esse adipisci sequi illo
-          corporis cum voluptatibus, architecto id tempora ipsa, tempore saepe.
-        </p>
+        <h5>
+          Imagina tus empapelados, cerámicos, tapizados o telas estampados con motivos exclusivos hechos para tu hogar.
+          ¿Por qué no tener un mueble, lámpara u objeto único?
+        </h5>
       </div>
     </div>
   </header>
@@ -57,11 +60,15 @@
     <!-- DESTACADOS columna + slider-->
     <section class="section__ancho">
       <article>
-        <div class="columna1"><img src="./../img/placeholder_16.9_0.jpg" alt=""></div>
+        <div class="columna1"><img src="./../img/placeholder_16.9_0.jpg" alt="Productos personalizados y exclusivos">
+        </div>
         <div class="columna2">
           <h3>Tienda de Diseño - Destacados</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam nesciunt itaque ratione illo magnam.
-            Debitis reiciendis sit, quis nobis ad hic nulla? Ipsa nesciunt cum dolore quaerat repudiandae, natus odit!
+          <p>En nuestra tienda de diseño encontrarás únicamente productos diseñados aquí, por nuestro estudio. Si bien
+            cada diseño es concebido para cada uno
+            de los clientes, contamos con una colección exclusiva de objetos y elementos que solo nosotros podemos
+            ofrecerte.
+            También ofrecemos el servicio de personalizar algunas piezas, sus colores, tamaños o tramas.
           </p>
         </div>
       </article>
@@ -71,59 +78,59 @@
     <section class="section__productos">
       <div class="row g-5 my-20">
         <!--producto 1-->
-        <div class="col-lg-3 col-md-6 col-12">
+        <div class="col-lg-4 col-md-6 col-12 col-xl-3">
           <div class="bg-image">
-            <img src="./../img/placeholder_1.1_2.jpg" class="w-100" alt="nombre del proyecto" />
+            <img src="./../img/placeholder_1.1_2.jpg" class="w-100" alt="Nombre del Producto 1" />
             <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
-              <div class="d-flex">
-                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 1</p>
-                <p class="col-3 text-white mb-0 align-self-end">$ 999</p>
-                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
-                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              <div class="precios">
+                <p class="col-6 text-white mb-0">Cerámicos estilo andalús</p>
+                <p class="col-3 text-white mb-0 pesos">$ 999</p>
+                <p class="col-3 text-white mb-0 align-items-end justify-content-between">
+                  <i class='bx bx-cart bx-sm'></i> <i class='bx bx-right-arrow-circle bx-sm'></i></p>
               </div>
             </div>
           </div>
         </div>
         <!--producto 2-->
-        <div class="col-lg-3 col-md-6 col-12">
+        <div class="col-lg-4 col-md-6 col-12 col-xl-3">
           <div class="bg-image">
-            <img src="./../img/placeholder_1.1_5.jpg" class="w-100" alt="nombre del proyecto" />
+            <img src="./../img/placeholder_1.1_5.jpg" class="w-100" alt="Papel tapiz kids 25" />
             <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
-              <div class="d-flex">
-                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 2</p>
-                <p class="col-3 text-white mb-0 align-self-end">$ 1,999</p>
-                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
-                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              <div class="precios">
+                <p class="col-6 text-white mb-0">Papel tapiz kids 25</p>
+                <p class="col-3 text-white mb-0 pesos">$ 1,999</p>
+                <p class="col-3 text-white mb-0 align-items-end justify-content-between">
+                  <i class='bx bx-cart bx-sm'></i> <i class='bx bx-right-arrow-circle bx-sm'></i></p>
               </div>
             </div>
           </div>
         </div>
 
         <!--producto 3-->
-        <div class="col-lg-3 col-md-6 col-12">
+        <div class="col-lg-4 col-md-6 col-12 col-xl-3">
           <div class="bg-image">
-            <img src="./../img/placeholder_1.1_13.jpg" class="w-100" alt="nombre del proyecto" />
+            <img src="./../img/placeholder_1.1_13.jpg" class="w-100" alt="Banca de madera" />
             <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
-              <div class="d-flex">
-                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 3</p>
-                <p class="col-3 text-white mb-0 align-self-end">$ 1,999</p>
-                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
-                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              <div class="precios">
+                <p class="col-6 text-white mb-0">Banca de madera</p>
+                <p class="col-3 text-white mb-0 pesos">$ 1,999</p>
+                <p class="col-3 text-white mb-0 align-items-end justify-content-between">
+                  <i class='bx bx-cart bx-sm'></i> <i class='bx bx-right-arrow-circle bx-sm'></i></p>
               </div>
             </div>
           </div>
         </div>
 
         <!--producto 4-->
-        <div class="col-lg-3 col-md-6 col-12">
+        <div class="col-lg-4 col-md-6 col-12 col-xl-3">
           <div class="bg-image">
-            <img src="./../img/placeholder_1.1_6.jpg" class="w-100" alt="nombre del proyecto" />
+            <img src="./../img/placeholder_1.1_16.jpg" class="w-100" alt="Tapíz desierto Mex" />
             <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
-              <div class="d-flex">
-                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 4</p>
-                <p class="col-3 text-white mb-0 align-self-end">$ 1,099</p>
-                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
-                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              <div class="precios">
+                <p class="col-6 text-white mb-0">Tapíz desierto Mex</p>
+                <p class="col-3 text-white mb-0 pesos">$ 1,099</p>
+                <p class="col-3 text-white mb-0 align-items-end justify-content-between">
+                  <i class='bx bx-cart bx-sm'></i> <i class='bx bx-right-arrow-circle bx-sm'></i></p>
               </div>
             </div>
           </div>
@@ -131,15 +138,15 @@
 
 
         <!--producto 5-->
-        <div class="col-lg-3 col-md-6 col-12">
+        <div class="col-lg-4 col-md-6 col-12 col-xl-3">
           <div class="bg-image">
-            <img src="./../img/placeholder_1.1_3.jpg" class="w-100" alt="nombre del proyecto" />
+            <img src="./../img/placeholder_1.1_3.jpg" class="w-100" alt="Sillas White 6" />
             <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
-              <div class="d-flex">
-                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 5</p>
-                <p class="col-3 text-white mb-0 align-self-end">$ 1,099</p>
-                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
-                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              <div class="precios">
+                <p class="col-6 text-white mb-0">Sillas White 6</p>
+                <p class="col-3 text-white mb-0 pesos">$ 1,099</p>
+                <p class="col-3 text-white mb-0 align-items-end justify-content-between">
+                  <i class='bx bx-cart bx-sm'></i> <i class='bx bx-right-arrow-circle bx-sm'></i></p>
               </div>
             </div>
           </div>
@@ -147,15 +154,15 @@
 
 
         <!--producto 6-->
-        <div class="col-lg-3 col-md-6 col-12">
+        <div class="col-lg-4 col-md-6 col-12 col-xl-3">
           <div class="bg-image">
-            <img src="./../img/placeholder_1.1_8.jpg" class="w-100" alt="nombre del proyecto" />
+            <img src="./../img/placeholder_1.1_8.jpg" class="w-100" alt="Alacena country Aqua" />
             <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
-              <div class="d-flex">
-                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 6</p>
-                <p class="col-3 text-white mb-0 align-self-end">$ 1,099</p>
-                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
-                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              <div class="precios">
+                <p class="col-6 text-white mb-0">Alacena country Aqua</p>
+                <p class="col-3 text-white mb-0 pesos">$ 1,099</p>
+                <p class="col-3 text-white mb-0 align-items-end justify-content-between">
+                  <i class='bx bx-cart bx-sm'></i> <i class='bx bx-right-arrow-circle bx-sm'></i></p>
               </div>
             </div>
           </div>
@@ -163,15 +170,15 @@
 
 
         <!--producto 7-->
-        <div class="col-lg-3 col-md-6 col-12">
+        <div class="col-lg-4 col-md-6 col-12 col-xl-3">
           <div class="bg-image">
-            <img src="./../img/placeholder_1.1_10.jpg" class="w-100" alt="nombre del proyecto" />
+            <img src="./../img/placeholder_1.1_10.jpg" class="w-100" alt="Lámpara chic" />
             <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
-              <div class="d-flex">
-                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 7</p>
-                <p class="col-3 text-white mb-0 align-self-end">$ 1,099</p>
-                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
-                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              <div class="precios">
+                <p class="col-6 text-white mb-0">Lámpara chic</p>
+                <p class="col-3 text-white mb-0 pesos">$ 1,099</p>
+                <p class="col-3 text-white mb-0 align-items-end justify-content-between">
+                  <i class='bx bx-cart bx-sm'></i> <i class='bx bx-right-arrow-circle bx-sm'></i></p>
               </div>
             </div>
           </div>
@@ -179,15 +186,15 @@
 
 
         <!--producto 8-->
-        <div class="col-lg-3 col-md-6 col-12">
+        <div class="col-lg-4 col-md-6 col-12 col-xl-3">
           <div class="bg-image">
-            <img src="./../img/placeholder_1.1_9.jpg" class="w-100" alt="nombre del proyecto" />
+            <img src="./../img/placeholder_1.1_9.jpg" class="w-100" alt="Sillón brown" />
             <div class="mask row g-0 w-100" data-bs-toggle="modal" data-bs-target="#modalProducto">
-              <div class="d-flex">
-                <p class="col-6 text-white mb-0 align-self-end">Nombre producto 8</p>
-                <p class="col-3 text-white mb-0 align-self-end">$ 1,099</p>
-                <p class="col-3 text-white mb-0 align-self-end align-items-end justify-content-between"><i
-                    class='bx bxs-shopping-bag'></i> <i class='bx bx-plus-circle'></i></p>
+              <div class="precios">
+                <p class="col-6 text-white mb-0">Sillón brown</p>
+                <p class="col-3 text-white mb-0 pesos">$ 1,099</p>
+                <p class="col-3 text-white mb-0 align-items-end justify-content-between">
+                  <i class='bx bx-cart bx-sm'></i> <i class='bx bx-right-arrow-circle bx-sm'></i></p>
               </div>
             </div>
           </div>
@@ -197,26 +204,27 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="modalProyecto1">Producto template</h5>
+                <h5 class="modal-title" id="modalProyecto1">Nombre del producto</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <!--modal carousel producto template-->
                 <div class="">
-                  <h6>Autor: Jorge Perez</h6>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sit tenetur explicabo nam fugit, cum
+                  <h6>Material y dimensiones</h6>
+                  <p><strong>Características:</strong>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At sit tenetur explicabo nam fugit, cum
                     aspernatur pariatur! Distinctio, nostrum veritatis.</p>
                 </div>
                 <div id="carouselProducto" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="./../img/placeholder_1.1_10.jpg" class="d-block w-100" alt="...">
+                      <img src="./../img/placeholder_1.1_10.jpg" class="d-block w-100" alt="Imagen del producto1">
                     </div>
                     <div class="carousel-item">
-                      <img src="./../img/placeholder_1.1_2.jpg" class="d-block w-100" alt="...">
+                      <img src="./../img/placeholder_1.1_2.jpg" class="d-block w-100" alt="Imagen del producto2">
                     </div>
                     <div class="carousel-item">
-                      <img src="./../img/placeholder_1.1_13.jpg" class="d-block w-100" alt="...">
+                      <img src="./../img/placeholder_1.1_13.jpg" class="d-block w-100" alt="Imagen del producto3">
                     </div>
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto"
@@ -238,13 +246,13 @@
     </section>
   </main>
   <footer class:"container">
-    <div class="row">
+    <div class="row align-items-center p-5">
       <div class="col-md-4 col-12">
-        <div class="row justify-content-center justify-content-md-start">
-          <div class="col-auto">
+        <div class="row flex-column flex-md-row justify-content-center justify-content-md-start">
+          <div class="col-auto text-center text-md-start">
             <img src="./../img/logo_100.jpg" alt="Logo estudio diseño" class="footer__logo" />
           </div>
-          <div class="col-auto text-center text-md-start">
+          <div class="col-auto text-center text-md-start align-self-center pt-2">
             <p>Nombre de la calle #1234</p>
             <p>Tel. 44 4444.4444</p>
           </div>
@@ -266,24 +274,32 @@
       </div>
       <div class="col-md-4 col-12">
         <form method="post" action="#" class="row justify-content-center justify-content-md- align-items-center">
-
-          <div class="col-auto"><input type="email" name="email" placeholder="tuemail@email.com"
-              class="footer_form--text form-control" /></div>
-          <div class="col-auto"> <input type="submit" value="Suscríbete" class="footer_form--button" />
+          <div class="input-group">
+            <input type="text" class="form-control " id="suscripcion" placeholder="tuemail@email.com">
+            <button type="submit" class="submit">Suscríbete</button>
           </div>
-
         </form>
       </div>
     </div>
-
+    <!-- Copyright -->
+    <div class="copyright">
+      <p class="mapa"><a href="./sitemap.html">Mapa del sitio</a></p>
+      <p class="copy">© 2020 Copyright - Sergio Vidal</p>
+    </div>
+    <!-- Copyright -->
   </footer>
-  <!-- Copyright -->
-  <div class="text-center p-3 copyright">
-    © 2020 Copyright - Sergio Vidal</div>
-  <!-- Copyright -->
+  <!-- Script scroll cambio color -->
+  <script>
+    window.addEventListener('scroll', function () {
+      let header = document.querySelector('header');
+      let windowPosition = window.scrollY > 500;
+      header.classList.toggle('scrolling-active', windowPosition);
+    })
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
+
 </body>
 
 </html>
