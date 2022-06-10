@@ -316,7 +316,8 @@ input#hambur {
 
 .section__2col {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); }
+  grid-template-columns: repeat(1, 1fr);
+  align-items: flex-start; }
   @media (min-width: 768px) {
     .section__2col {
       display: grid;
@@ -356,7 +357,11 @@ input#hambur {
     grid-template-columns: 1fr; }
     @media (min-width: 768px) {
       .section__ancho article {
-        grid-template-columns: 1fr 1fr; } }
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start; } }
+    @media (min-width: 992px) {
+      .section__ancho article {
+        align-items: center; } }
 
 .section__contacto {
   grid-template-columns: 1fr; }
@@ -386,19 +391,26 @@ a.boton {
   padding: 5px 10px;
   margin: 5px 0;
   font-size: 0.8rem;
-  display: inline-block;
+  display: inline-flex;
   text-transform: uppercase;
+  align-items: center;
   transition: all 0.8s; }
+  .boton.botonlinea,
+  a.boton.botonlinea {
+    background-color: #fff;
+    border: #7b796c 1px solid;
+    color: #7b796c;
+    font-weight: 400; }
+  .boton:hover,
+  a.boton:hover {
+    background-color: #504f46;
+    color: #fff; }
   @media (min-width: 768px) {
     .boton,
     a.boton {
       padding: 5px 10px;
       font-size: 0.9rem;
-      font-weight: 600; } }
-
-.boton:hover {
-  background-color: #504f46;
-  color: #fff; }
+      font-weight: 500; } }
 
 .section__servicio--boton {
   margin-top: 20px;
@@ -547,12 +559,13 @@ footer button .bx-chevrons-right {
   .copyright .mapa {
     text-align: center;
     font-size: 0.75rem; }
+    .copyright .copy a,
+    .copyright .mapa a {
+      color: #fff;
+      text-decoration: none; }
   @media (min-width: 768px) {
     .copyright .mapa {
-      text-align: left; }
-      .copyright .mapa a {
-        color: #fff;
-        text-decoration: none; } }
+      text-align: left; } }
 
 /*CARDS*/
 .contenedor__cards {
@@ -586,24 +599,30 @@ footer button .bx-chevrons-right {
     margin-bottom: 1em; }
     .team__contenido .team__cabecera .team__nombre {
       border-bottom: 1px solid rgba(0, 78, 146, 0.2);
-      padding-bottom: 0.7rem;
+      padding-bottom: 0.7em;
       margin: 0;
       color: #7b796c;
       font-family: 'Work Sans', sans-serif;
       font-weight: 400;
       text-align: center; }
   .team__contenido .team__bio {
-    font-size: 0.85em;
+    font-size: 0.9rem;
     line-height: 1.5;
     flex-grow: 1; }
   .team__contenido .team__date {
     display: flex;
     justify-content: space-between;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     font-weight: 500; }
+    .team__contenido .team__date .bx {
+      color: #7b796c; }
     .team__contenido .team__date p {
       padding: 0;
       margin: 0; }
+
+section.tendencias .team__contenido .team__cabecera .team__nombre {
+  text-align: left;
+  font-size: 1.3rem; }
 
 .team__pie {
   background-color: #7b796c;
@@ -678,7 +697,7 @@ footer button .bx-chevrons-right {
     object-fit: cover; }
 
 #carouselindex .carousel-caption {
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.85); }
 
 #carouselMitienda .carousel-caption {
   background-color: rgba(123, 121, 108, 0.7); }
@@ -709,7 +728,8 @@ footer button .bx-chevrons-right {
   color: #2c2c2c;
   font-weight: 400;
   font-size: .9rem;
-  line-height: normal; }
+  line-height: normal;
+  padding: 0; }
 
 #suscripcion.form-control.controlp {
   border-radius: 0; }

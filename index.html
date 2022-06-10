@@ -104,8 +104,13 @@
         <div class="columna2">
           <h3>Diseño de interiores</h3>
           <p>
-            <strong>Lugares únicos y personalizados</strong>. Experiencia en el diseño de cocinas, salas de estar, dormitorios y cada
-          ambiente del hogar, incluyendo mobiliario creado a medida, dando un toque único y personal. </p>
+            <strong>Lugares únicos y personalizados</strong>. Experiencia en el diseño de cocinas, salas de estar,
+            dormitorios y cada
+            ambiente del hogar, incluyendo mobiliario creado a medida, dando un toque único y personal. </p>
+          <p class="mt-3">
+            <a href="./pages/servicios.html" class="boton"> Diseño de interiores <i
+                class='bx bx-right-arrow-circle bx-xs'></i></a>
+          </p>
         </div>
       </article>
 
@@ -117,7 +122,11 @@
           <h3>Exteriores y paisajismo</h3>
           <p>
             El exterior es tan importante como el interior. Nos apasiona recrear y pensar cada espacio para que esté en
-          <strong>armonía y sincronía</strong> con el concepto interior. </p>
+            <strong>armonía y sincronía</strong> con el concepto interior. </p>
+          <p class="mt-3">
+            <a href="./pages/servicios.html" class="boton"> Diseño de exteriores <i
+                class='bx bx-right-arrow-circle bx-xs'></i></a>
+          </p>
         </div>
       </article>
     </section>
@@ -131,7 +140,7 @@
         <div class="col-md-6 col-lg-3 col-12">
           <div class="bg-image">
             <img src="./img/placeholder_1.1_7.jpg" class="w-100" alt="Comedor Classic 25" />
-            <div class="proyecto mask">
+            <div class="proyecto mask" data-bs-toggle="modal" data-bs-target="#modalProyectoej">
               <div class="d-flex justify-content-center align-items-center h-100">
                 <p class="text-white mb-0">Comedor Classic 25 <i class='bx bx-right-arrow-circle bx-sm'></i></p>
               </div>
@@ -142,7 +151,7 @@
         <div class="col-md-6 col-lg-3 col-12">
           <div class="bg-image">
             <img src="./img/placeholder_1.1_12.jpg" class="w-100" alt="Piscina Andalús" />
-            <div class="proyecto mask">
+            <div class="proyecto mask" data-bs-toggle="modal" data-bs-target="#modalProyectoej">
               <div class="d-flex justify-content-center align-items-center h-100">
                 <p class="text-white mb-0">Piscina Andalús <i class='bx bx-right-arrow-circle bx-sm'></i></p>
               </div>
@@ -153,7 +162,7 @@
         <div class="col-md-6 col-lg-3 col-12">
           <div class="bg-image">
             <img src="./img/placeholder_1.1_11.jpg" class="w-100" alt="Comedor mix campo" />
-            <div class="proyecto mask">
+            <div class="proyecto mask" data-bs-toggle="modal" data-bs-target="#modalProyectoej">
               <div class="d-flex justify-content-center align-items-center h-100">
                 <p class="text-white mb-0">Comedor mix campo <i class='bx bx-right-arrow-circle bx-sm'></i></p>
               </div>
@@ -164,13 +173,63 @@
         <div class="col-md-6 col-lg-3 col-12">
           <div class="bg-image">
             <img src="./img/placeholder_1.1_5.jpg" class="w-100" alt="Living Paris" />
-            <div class="proyecto mask">
+            <div class="proyecto mask" data-bs-toggle="modal" data-bs-target="#modalProyectoej">
               <div class="d-flex justify-content-center align-items-center h-100">
                 <p class="text-white mb-0">Living Paris <i class='bx bx-right-arrow-circle bx-sm'></i></p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <!-- Modal Proyecto - ejemplo-->
+      <div class="modal fade" id="modalProyectoej" tabindex="-1" aria-labelledby="modalProyectoejLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalProyectoej">Nombre del Proyecto</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!--modal carousel Proyectoejemplo-->
+              <div class="">
+                <h6>Autor: Jorge Perez</h6>
+                <p>Aquí tendremos la descripción del proyecto. A modo de ejemplo se despliega el mismo contenido del
+                  modal para mostrar el
+                  funcionamiento del link, la apertura del modal y el contenido que podríamos incluir en este espacio.
+                </p>
+              </div>
+              <div id="carouselProyectoej" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./../img/placeholder_1.1_10.jpg" class="d-block w-100" alt="Descripción imagen 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./../img/placeholder_1.1_2.jpg" class="d-block w-100" alt="Descripción imagen 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./../img/placeholder_1.1_13.jpg" class="d-block w-100" alt="Descripción imagen 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectoej"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProyectoej"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-3">
+        <a href="./pages/proyectos.html" class="boton"> VER MÁS PROYECTOS <i
+            class='bx bx-right-arrow-circle bx-xs'></i></a>
       </div>
     </section>
 
@@ -217,8 +276,13 @@
         <div class="columna2">
           <h3>Tienda de Diseño</h3>
           <p>
-            Imagina tus empapelados, cerámicos, tapizados o telas estampados con<strong> motivos exclusivos hechos para tu
-          hogar</strong>. ¿Por qué no tener un mueble, lámpara u objeto único? </p>
+            Imagina tus empapelados, cerámicos, tapizados o telas estampados con<strong> motivos exclusivos hechos para
+              tu
+              hogar</strong>. ¿Por qué no tener un mueble, lámpara u objeto único? </p>
+          <p class="mt-3">
+            <a href="./pages/tienda_diseno.html" class="boton"> Visitar la tienda <i
+                class='bx bx-right-arrow-circle bx-xs'></i></a>
+          </p>
         </div>
       </article>
     </section>

@@ -361,6 +361,7 @@ input#hambur {
 .section__2col {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  align-items: flex-start;
 
   @include medias (md) {
     display: grid;
@@ -412,6 +413,11 @@ input#hambur {
 
     @include medias (md) {
       grid-template-columns: 1fr 1fr;
+      align-items: flex-start
+    }
+
+    @include medias (lg) {
+      align-items: center
     }
   }
 }
@@ -450,20 +456,28 @@ a.boton {
   padding: 5px 10px;
   margin: 5px 0;
   font-size: 0.8rem;
-  display: inline-block;
+  display: inline-flex;
   text-transform: uppercase;
+  align-items: center;
   transition: all 0.8s;
+
+  &.botonlinea {
+    background-color: #fff;
+    border: $color-principal 1px solid;
+    color: $color-principal;
+    font-weight: 400;
+  }
+
+  &:hover {
+    background-color: $color-principal-dark;
+    color: #fff;
+  }
 
   @include medias (md) {
     padding: 5px 10px;
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 500;
   }
-}
-
-.boton:hover {
-  background-color: $color-principal-dark;
-  color: #fff;
 }
 
 .section__servicio--boton {
@@ -649,16 +663,16 @@ footer button .bx-chevrons-right {
   .mapa {
     text-align: center;
     font-size: 0.75rem;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
   }
 
   @include medias(md) {
     .mapa {
       text-align: left;
 
-      a {
-        color: #fff;
-        text-decoration: none;
-      }
     }
   }
 }
@@ -703,7 +717,7 @@ footer button .bx-chevrons-right {
 
     .team__nombre {
       border-bottom: 1px solid rgba(0, 78, 146, 0.2);
-      padding-bottom: 0.7rem;
+      padding-bottom: 0.7em;
       margin: 0;
       color: $color-principal;
       font-family: 'Work Sans', sans-serif;
@@ -713,7 +727,7 @@ footer button .bx-chevrons-right {
   }
 
   .team__bio {
-    font-size: 0.85em;
+    font-size: 0.9rem;
     line-height: 1.5;
     flex-grow: 1;
   }
@@ -721,14 +735,21 @@ footer button .bx-chevrons-right {
   .team__date {
     display: flex;
     justify-content: space-between;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     font-weight: 500;
-
+    .bx {
+      color: $color-principal;
+    }
     p {
       padding: 0;
       margin: 0;
     }
   }
+}
+
+section.tendencias .team__contenido .team__cabecera .team__nombre {
+  text-align: left;
+  font-size: 1.3rem;
 }
 
 .team__pie {
@@ -822,7 +843,7 @@ footer button .bx-chevrons-right {
 }
 
 #carouselindex .carousel-caption {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 #carouselMitienda .carousel-caption {
@@ -865,6 +886,7 @@ footer button .bx-chevrons-right {
     font-weight: 400;
     font-size: .9rem;
     line-height: normal;
+    padding: 0;
   }
 }
 

@@ -60,9 +60,9 @@
   <main>
     <h2>Galería de proyectos</h2>
     <div class="filtros">
-      <a href="#" class="boton"> Proyectos de interior</a>
-      <a href="#" class="boton"> Proyectos de exterior</a>
-      <a href="#" class="boton"> Todos</a>
+      <a href="#" class="boton botonlinea"> Proyectos de interior</a>
+      <a href="#" class="boton botonlinea"> Proyectos de exterior</a>
+      <a href="#" class="boton botonlinea"> Todos</a>
     </div>
 
     <!-- PROYECTOS-->
@@ -91,11 +91,13 @@
               </div>
               <div class="modal-body">
                 <!--modal carousel proyecto1-->
-                <div class="">
+                <div>
                   <h6>Diseñador: Jorge Perez | Octubre 2022</h6>
                   <p><strong>Descripción del proyecto:</strong>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At sit tenetur explicabo nam fugit, cum
-                    aspernatur pariatur! Distinctio, nostrum veritatis.</p>
+                    Aquí se agregará las características descriptivas de cada uno de los proyecto, algunos datos de
+                    relevancia, como materiales,
+                    donde se realizó, el concepto, etc. El carousel de imágenes también corresponderán a diferentes
+                    vistas del proyecto.</p>
                 </div>
                 <div id="carouselProyecto1" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
@@ -142,16 +144,18 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="modalProyecto2">Proyecto2</h5>
+                <h5 class="modal-title" id="modalProyecto2">Jardin Andalús</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <!--modal carousel Proyecto2-->
-                <div class="">
+                <div>
                   <h6>Diseñador: Jorge Perez | Octubre 2022</h6>
                   <p><strong>Descripción del proyecto:</strong>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At sit tenetur explicabo nam fugit, cum
-                    aspernatur pariatur! Distinctio, nostrum veritatis.</p>
+                    Aquí se agregará las características descriptivas de cada uno de los proyecto, algunos datos de
+                    relevancia, como materiales,
+                    donde se realizó, el concepto, etc. El carousel de imágenes también corresponderán a diferentes
+                    vistas del proyecto.</p>
                 </div>
                 <div id="carouselProyecto2" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
@@ -199,15 +203,18 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="modalProyecto3">Proyecto3</h5>
+                <h5 class="modal-title" id="modalProyecto3">Jardín interior palmeras</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <!--modal carousel Proyecto3-->
-                <div class="">
-                  <h6>Autor: Jorge Perez</h6>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sit tenetur explicabo nam fugit, cum
-                    aspernatur pariatur! Distinctio, nostrum veritatis.</p>
+                <div>
+                  <h6>Diseñador: Jorge Perez | Octubre 2022</h6>
+                  <p><strong>Descripción del proyecto:</strong>
+                    Aquí se agregará las características descriptivas de cada uno de los proyecto, algunos datos de
+                    relevancia, como materiales,
+                    donde se realizó, el concepto, etc. El carousel de imágenes también corresponderán a diferentes
+                    vistas del proyecto.</p>
                 </div>
                 <div id="carouselProyecto3" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
@@ -254,15 +261,18 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="modalProyecto4">Proyecto4</h5>
+                <h5 class="modal-title" id="modalProyecto4">Comedor diario luz 10</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <!--modal carousel Proyecto4-->
-                <div class="">
-                  <h6>Autor: Jorge Perez</h6>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sit tenetur explicabo nam fugit, cum
-                    aspernatur pariatur! Distinctio, nostrum veritatis.</p>
+                <div>
+                  <h6>Diseñador: Jorge Perez | Octubre 2022</h6>
+                  <p><strong>Descripción del proyecto:</strong>
+                    Aquí se agregará las características descriptivas de cada uno de los proyecto, algunos datos de
+                    relevancia, como materiales,
+                    donde se realizó, el concepto, etc. El carousel de imágenes también corresponderán a diferentes
+                    vistas del proyecto.</p>
                 </div>
                 <div id="carouselProyecto4" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
@@ -293,14 +303,251 @@
         </div>
       </div>
 
-      <div class="filtros">
-        <a href="#" class="boton"> VER MÁS PROYECTOS</a>
+      <p>
+        <button class="boton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample">
+          VER MÁS PROYECTOS
+        </button>
+      </p>
+
+      <div class="row g-5 my-20 collapse" id="collapseExample">
+        <!--proyecto 1-->
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="bg-image">
+            <img src="./../img/placeholder_1.1_4.jpg" class="w-100" alt="Living Hipster 5" />
+            <div class="proyecto mask" data-bs-toggle="modal" data-bs-target="#modalProyecto1">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <p class="text-white mb-0">Proyecto 5 <i class='bx bx-right-arrow-circle bx-sm'></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal proyecto5-->
+        <div class="modal fade" id="modalProyecto1" tabindex="-1" aria-labelledby="modalProyecto1Label"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalProyecto1">Proyecto 5</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!--modal carousel proyecto5-->
+                <div>
+                  <h6>Diseñador: Jorge Perez | Octubre 2022</h6>
+                  <p><strong>Descripción del proyecto:</strong>
+                    Aquí se agregará las características descriptivas de cada uno de los proyecto, algunos datos de
+                    relevancia, como materiales,
+                    donde se realizó, el concepto, etc. El carousel de imágenes también corresponderán a diferentes
+                    vistas del proyecto.</p>
+                </div>
+                <div id="carouselProyecto1" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./../img/placeholder_1.1_10.jpg" class="d-block w-100" alt="Descripción imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./../img/placeholder_1.1_2.jpg" class="d-block w-100" alt="Descripción imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./../img/placeholder_1.1_13.jpg" class="d-block w-100" alt="Descripción imagen 3">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--proyecto6-->
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="bg-image">
+            <img src="./../img/placeholder_1.1_12.jpg" class="w-100" alt="Piscina andalus" />
+            <div class="proyecto mask" data-bs-toggle="modal" data-bs-target="#modalProyecto2">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <p class="text-white mb-0">Proyecto 6 <i class='bx bx-right-arrow-circle bx-sm'></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Proyecto6-->
+        <div class="modal fade" id="modalProyecto2" tabindex="-1" aria-labelledby="modalProyecto2Label"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalProyecto2">Proyecto 6</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!--modal carousel Proyecto6-->
+                <div>
+                  <h6>Diseñador: Jorge Perez | Octubre 2022</h6>
+                  <p><strong>Descripción del proyecto:</strong>
+                    Aquí se agregará las características descriptivas de cada uno de los proyecto, algunos datos de
+                    relevancia, como materiales,
+                    donde se realizó, el concepto, etc. El carousel de imágenes también corresponderán a diferentes
+                    vistas del proyecto.</p>
+                </div>
+                <div id="carouselProyecto2" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./../img/placeholder_1.1_10.jpg" class="d-block w-100" alt="Descripción imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./../img/placeholder_1.1_2.jpg" class="d-block w-100" alt="Descripción imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./../img/placeholder_1.1_13.jpg" class="d-block w-100" alt="Descripción imagen 3">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--proyecto7-->
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="bg-image">
+            <img src="./../img/placeholder_1.1_13.jpg" class="w-100" alt="Jardín interior palmeras" />
+            <div class="proyecto mask" data-bs-toggle="modal" data-bs-target="#modalProyecto3">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <p class="text-white mb-0">Proyecto 7 <i class='bx bx-right-arrow-circle bx-sm'></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Proyecto7-->
+        <div class="modal fade" id="modalProyecto3" tabindex="-1" aria-labelledby="modalProyecto3Label"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalProyecto3">Proyecto 7</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!--modal carousel Proyecto7-->
+                <div>
+                  <h6>Diseñador: Jorge Perez | Octubre 2022</h6>
+                  <p><strong>Descripción del proyecto:</strong>
+                    Aquí se agregará las características descriptivas de cada uno de los proyecto, algunos datos de
+                    relevancia, como materiales,
+                    donde se realizó, el concepto, etc. El carousel de imágenes también corresponderán a diferentes
+                    vistas del proyecto.</p>
+                </div>
+                <div id="carouselProyecto3" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./../img/placeholder_1.1_10.jpg" class="d-block w-100" alt="Descripción imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./../img/placeholder_1.1_2.jpg" class="d-block w-100" alt="Descripción imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./../img/placeholder_1.1_13.jpg" class="d-block w-100" alt="Descripción imagen 3">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto3"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--proyecto8-->
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="bg-image">
+            <img src="./../img/placeholder_1.1_11.jpg" class="w-100" alt="Comedor diario luz" />
+            <div class="proyecto mask" data-bs-toggle="modal" data-bs-target="#modalProyecto4">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <p class="text-white mb-0">Proyecto 8 <i class='bx bx-right-arrow-circle bx-sm'></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Proyecto8-->
+        <div class="modal fade" id="modalProyecto4" tabindex="-1" aria-labelledby="modalProyecto4Label"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalProyecto4">Proyecto 8</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!--modal carousel Proyecto8-->
+                <div>
+                  <h6>Diseñador: Jorge Perez | Octubre 2022</h6>
+                  <p><strong>Descripción del proyecto:</strong>
+                    Aquí se agregará las características descriptivas de cada uno de los proyecto, algunos datos de
+                    relevancia, como materiales,
+                    donde se realizó, el concepto, etc. El carousel de imágenes también corresponderán a diferentes
+                    vistas del proyecto.</p>
+                </div>
+                <div id="carouselProyecto4" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./../img/placeholder_1.1_10.jpg" class="d-block w-100" alt="Descripción imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./../img/placeholder_1.1_2.jpg" class="d-block w-100" alt="Descripción imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./../img/placeholder_1.1_13.jpg" class="d-block w-100" alt="Descripción imagen 3">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto4"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto4"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
+
     </section>
-
-
-
   </main>
 
   <footer class:"container">
